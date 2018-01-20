@@ -5,15 +5,15 @@ date_default_timezone_set('Europe/Berlin');
 
 //site address
 define('ENVIRONMENT', 'development');
-define('DIR','http://localhost/Simple-MVC/');
+define('DIR','http://test.lo/Simple-MVC/');
 define('DOCROOT', dirname(__FILE__));
 
 // Credentials for the local server
 define('DB_TYPE','mysql');
 define('DB_HOST','localhost');
-define('DB_NAME','products');
+define('DB_NAME','simple-mvc-products');
 define('DB_USER','root');
-define('DB_PASS','root');
+define('DB_PASS','');
 
 // Credentials for the HTW server
 // define('DB_HOST','db.f4.htw-berlin.de');
