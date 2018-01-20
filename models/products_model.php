@@ -41,6 +41,11 @@ class Products_Model extends Model {
       url like "%'.$query.'%" ||
       price like "%'.$query.'%"
       ORDER BY id DESC LIMIT 0, 20');
+      // return $this->_db->select('SELECT * FROM products WHERE
+      // name like "%:query%" ||
+      // url like "%:query%" ||
+      // price like "%:query%"
+      // ORDER BY id DESC LIMIT 0, 20');
    }
 
 
@@ -56,7 +61,7 @@ class Products_Model extends Model {
    * @return array Liste aus Produkten mit id, timestamp, name, url, image und price
    */
    public function all() {
-      return $this->_db->select('SELECT * FROM products ORDER BY id DESC LIMIT 0, 20');
+      return $this->_db->select('SELECT * FROM products ORDER BY id DESC LIMIT 0, 2000');
    }
 
 }

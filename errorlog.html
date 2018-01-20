@@ -1,6 +1,223 @@
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 20, 2018 22:58PM</p>
+
+         <p><strong>Message:</strong> Too few arguments to function User_Model::getSalt(), 0 passed in D:\OSPanel\domains\test.lo\public_html\Simple-MVC\models\user_model.php on line 25 and exactly 2 expected</p>
+
+         <p><strong>Code:</strong> 0</p>
+
+         <p><strong>File:</strong> D:\OSPanel\domains\test.lo\public_html\Simple-MVC\models\user_model.php</p>
+
+         <p><strong>Line:</strong> 35</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\models\user_model.php(25): User_Model->getSalt()
+#1 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\controllers\user.php(22): User_Model->add('1', '2')
+#2 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(81): User->add()
+#3 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(28): Bootstrap->_callControllerMethod()
+#4 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\index.php(39): Bootstrap->init()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 20, 2018 22:53PM</p>
+
+         <p><strong>Message:</strong> Too few arguments to function User_Model::add(), 0 passed in D:\OSPanel\domains\test.lo\public_html\Simple-MVC\controllers\user.php on line 22 and exactly 2 expected</p>
+
+         <p><strong>Code:</strong> 0</p>
+
+         <p><strong>File:</strong> D:\OSPanel\domains\test.lo\public_html\Simple-MVC\models\user_model.php</p>
+
+         <p><strong>Line:</strong> 5</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\controllers\user.php(22): User_Model->add()
+#1 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(81): User->add()
+#2 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(28): Bootstrap->_callControllerMethod()
+#3 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\index.php(39): Bootstrap->init()
+#4 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 20, 2018 22:53PM</p>
+
+         <p><strong>Message:</strong> Call to a member function add() on null</p>
+
+         <p><strong>Code:</strong> 0</p>
+
+         <p><strong>File:</strong> D:\OSPanel\domains\test.lo\public_html\Simple-MVC\controllers\user.php</p>
+
+         <p><strong>Line:</strong> 22</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(81): User->add()
+#1 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(28): Bootstrap->_callControllerMethod()
+#2 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\index.php(39): Bootstrap->init()
+#3 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 20, 2018 22:29PM</p>
+
+         <p><strong>Message:</strong> syntax error, unexpected ';'</p>
+
+         <p><strong>Code:</strong> 0</p>
+
+         <p><strong>File:</strong> D:\OSPanel\domains\test.lo\public_html\Simple-MVC\controllers\user.php</p>
+
+         <p><strong>Line:</strong> 18</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(27): Bootstrap->_loadExistingController()
+#1 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\index.php(39): Bootstrap->init()
+#2 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 20, 2018 21:54PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as%" ||
+      url like "%" as%" ||
+      price like "%" as%"
+      ORDER BY id D' at line 2</p>
+
+         <p><strong>Code:</strong> 42000</p>
+
+         <p><strong>File:</strong> D:\OSPanel\domains\test.lo\public_html\Simple-MVC\helpers\database.php</p>
+
+         <p><strong>Line:</strong> 22</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\helpers\database.php(22): PDOStatement->execute()
+#1 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\models\products_model.php(42): Database->select('SELECT * FROM p...')
+#2 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\controllers\products.php(39): Products_Model->search('" as')
+#3 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(81): Products->search()
+#4 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(28): Bootstrap->_callControllerMethod()
+#5 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\index.php(39): Bootstrap->init()
+#6 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 20, 2018 21:32PM</p>
+
+         <p><strong>Message:</strong> Too few arguments to function URL::redirect(), 1 passed in D:\OSPanel\domains\test.lo\public_html\Simple-MVC\controllers\products.php on line 30 and exactly 2 expected</p>
+
+         <p><strong>Code:</strong> 0</p>
+
+         <p><strong>File:</strong> D:\OSPanel\domains\test.lo\public_html\Simple-MVC\helpers\url.php</p>
+
+         <p><strong>Line:</strong> 5</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\controllers\products.php(30): URL::redirect('')
+#1 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(81): Products->insert()
+#2 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(28): Bootstrap->_callControllerMethod()
+#3 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\index.php(39): Bootstrap->init()
+#4 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 20, 2018 21:30PM</p>
+
+         <p><strong>Message:</strong> Too few arguments to function URL::redirect(), 1 passed in D:\OSPanel\domains\test.lo\public_html\Simple-MVC\controllers\products.php on line 29 and exactly 2 expected</p>
+
+         <p><strong>Code:</strong> 0</p>
+
+         <p><strong>File:</strong> D:\OSPanel\domains\test.lo\public_html\Simple-MVC\helpers\url.php</p>
+
+         <p><strong>Line:</strong> 5</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\controllers\products.php(29): URL::redirect('')
+#1 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(81): Products->insert()
+#2 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(28): Bootstrap->_callControllerMethod()
+#3 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\index.php(39): Bootstrap->init()
+#4 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 20, 2018 21:30PM</p>
+
+         <p><strong>Message:</strong> Too few arguments to function URL::redirect(), 0 passed in D:\OSPanel\domains\test.lo\public_html\Simple-MVC\controllers\products.php on line 34 and exactly 2 expected</p>
+
+         <p><strong>Code:</strong> 0</p>
+
+         <p><strong>File:</strong> D:\OSPanel\domains\test.lo\public_html\Simple-MVC\helpers\url.php</p>
+
+         <p><strong>Line:</strong> 5</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\controllers\products.php(34): URL::redirect()
+#1 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(81): Products->delete('2')
+#2 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(28): Bootstrap->_callControllerMethod()
+#3 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\index.php(39): Bootstrap->init()
+#4 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 20, 2018 21:29PM</p>
+
+         <p><strong>Message:</strong> Too few arguments to function URL::redirect(), 0 passed in D:\OSPanel\domains\test.lo\public_html\Simple-MVC\controllers\products.php on line 34 and exactly 2 expected</p>
+
+         <p><strong>Code:</strong> 0</p>
+
+         <p><strong>File:</strong> D:\OSPanel\domains\test.lo\public_html\Simple-MVC\helpers\url.php</p>
+
+         <p><strong>Line:</strong> 5</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\controllers\products.php(34): URL::redirect()
+#1 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(81): Products->delete('2')
+#2 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(28): Bootstrap->_callControllerMethod()
+#3 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\index.php(39): Bootstrap->init()
+#4 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 20, 2018 21:28PM</p>
+
+         <p><strong>Message:</strong> Too few arguments to function URL::redirect(), 0 passed in D:\OSPanel\domains\test.lo\public_html\Simple-MVC\controllers\products.php on line 29 and exactly 2 expected</p>
+
+         <p><strong>Code:</strong> 0</p>
+
+         <p><strong>File:</strong> D:\OSPanel\domains\test.lo\public_html\Simple-MVC\helpers\url.php</p>
+
+         <p><strong>Line:</strong> 5</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\controllers\products.php(29): URL::redirect()
+#1 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(81): Products->insert()
+#2 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\core\bootstrap.php(28): Bootstrap->_callControllerMethod()
+#3 D:\OSPanel\domains\test.lo\public_html\Simple-MVC\index.php(39): Bootstrap->init()
+#4 {main}</pre>
+
+         <hr />
 <p>Error on May 23, 2014 10:35AM - require(views/error/default.php): failed to open stream: No such file or directory in /Users/maxbeier/Sites/Simple-MVC/helpers/url.php on line 79</p>
 
 <p>Error on May 23, 2014 10:40AM - Missing argument 2 for URL::redirect(), called in /Users/maxbeier/Sites/Simple-MVC/controllers/products.php on line 10 and defined in /Users/maxbeier/Sites/Simple-MVC/helpers/url.php on line 57</p>
 
 <p>Error on May 23, 2014 10:40AM - Missing argument 2 for URL::redirect(), called in /Users/maxbeier/Sites/Simple-MVC/controllers/products.php on line 10 and defined in /Users/maxbeier/Sites/Simple-MVC/helpers/url.php on line 57</p>
+
+<p>Error on Jan 20, 2018 22:54PM - hash() expects at least 2 parameters, 1 given in D:\OSPanel\domains\test.lo\public_html\Simple-MVC\models\user_model.php on line 25</p>
+
+<p>Error on Jan 20, 2018 22:56PM - hash() expects at least 2 parameters, 1 given in D:\OSPanel\domains\test.lo\public_html\Simple-MVC\models\user_model.php on line 25</p>
 

@@ -25,5 +25,6 @@
          </form>
          <ul class="nav navbar-nav navbar-right">
             <li><a href="<?= DIR ?>products/add">neues <strong>Produkt</strong></a></li>
+            <li><a href="<?= DIR ?>user/add">New user</a></li>
          </ul>
       </nav>

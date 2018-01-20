@@ -31,7 +31,7 @@ class Products extends Controller {
 
    public function delete($id){
       $this->_model->delete($id);
-      return URL::redirect();
+      return URL::redirect('products', 303);
    }
 
    public function search(){
@@ -57,7 +57,7 @@ class Products extends Controller {
    public function update(){
       $this->_model->update($_POST['id'], $_POST['name'], $_POST['url'], $_POST['image'], $_POST['price']);
 
-      return URL::redirect();
+      return URL::redirect('products', 303);
    }
 
 
