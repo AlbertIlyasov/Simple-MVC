@@ -13,7 +13,7 @@
          if (isset($product['id'])) :
       ?>
 
-      <form role="form" action="<?= DIR ?>products/insert" method="POST">
+      <form role="form" action="<?= DIR ?>products/update" method="POST">
          <input class="form-control" type="text" name="name" placeholder="Produkt-Name" value="<?= $product['name'] ?>">
          <input class="form-control" type="url" name="url" placeholder="Produkt-URL" value="<?= $product['url'] ?>">
          <input class="form-control" type="url" name="image" placeholder="Produkt-Bild" value="<?= $product['image'] ?>">
