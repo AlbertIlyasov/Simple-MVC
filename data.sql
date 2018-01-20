@@ -36,5 +36,6 @@ CREATE TABLE `users` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `login` varchar(50) NOT NULL,
   `passwd` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY (`login`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ;

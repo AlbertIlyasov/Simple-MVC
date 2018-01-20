@@ -19,7 +19,11 @@ class User extends Controller {
          $login = $_POST['login'] ?? null;
          $passwd = $_POST['passwd'] ?? null;
       
-         $this->_model->add($login, $passwd);
+         if ($this->_model->add($login, $passwd)) {
+            return URL::redirect('user/add', 303);
+         } else {
+            $data['login'] = $login;
+         }
       }
 
 
