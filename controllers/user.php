@@ -1,16 +1,7 @@
 <?php
 
 class User extends Controller {
-
-   public function __construct() {
-      parent::__construct();
-
-      Session::init();
-      // echo '<pre>'; print_r(Session::display());
-      // echo '</pre>';
-   }
-
-
+   
    public function index() {
       $data['title'] = 'User page';
 
