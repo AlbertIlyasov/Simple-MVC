@@ -25,6 +25,16 @@
          </form>
          <ul class="nav navbar-nav navbar-right">
             <li><a href="<?= DIR ?>products/add">neues <strong>Produkt</strong></a></li>
-            <li><a href="<?= DIR ?>user/add">New user</a></li>
+            <li><a href="<?= DIR ?>user">user</a></li>
+            <? /*if (!User_Model::isAuth()) :*/ ?>
+            <? if (!Session::get('auth', 'id')) : ?>
+
+               <li><a href="<?= DIR ?>user/add">Reg user</a></li>
+               <li><a href="<?= DIR ?>user/auth">Sign in</a></li>
+            <? endif; ?>
+            <? /*if (User_Model::isAuth()) :*/ ?>
+            <? if (Session::get('auth', 'id')) : ?>
+               <li><a href="<?= DIR ?>user/logout">Log out</a></li>
+            <? endif; ?>
          </ul>
       </nav>

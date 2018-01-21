@@ -35,7 +35,11 @@ CREATE TABLE `products` (
 CREATE TABLE `users` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `login` varchar(50) NOT NULL,
-  `passwd` varchar(100) DEFAULT NULL,
+  `passwd` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `confirmation_code` varchar(100) NULL,
+  `status` tinyint unsigned NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY (`login`)
+  UNIQUE KEY (`login`),
+  UNIQUE KEY (`email`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ;

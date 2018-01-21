@@ -8,12 +8,11 @@
 
       <?php echo Message::show(); ?>
 
-      <form role="form" action="<?= DIR ?>user/add" method="POST">
+      <form role="form" action="<?= DIR ?>user/auth" method="POST">
          <input class="form-control" type="text" name="login" value="<?= $data['login'] ?? '' ?>" placeholder="Login" required autofocus>
          <input class="form-control" type="password" name="passwd" placeholder="Password" required>
-         <input class="form-control" type="email" name="email" value="<?= $data['email'] ?? '' ?>" placeholder="E-mail" required>
          <div class="row">
-            <button type="submit" class="btn btn-primary btn-block">Register</button>
+            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
          </div>
       </form>
 
